@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page UI</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f6f9;
+    }
+
+    .profile-container{
+      max-width:900px;
+      margin:50px auto;
+      background:white;
+      border-radius:16px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.15);
+      overflow:hidden;
+    }
+
+    .cover{
+      height:180px;
+      background:linear-gradient(135deg, #0f172a, #38bdf8);
+    }
+
+    .profile-content{
+      padding:20px;
+      text-align:center;
+      position:relative;
+    }
+
+    .profile-img{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      border:5px solid white;
+      position:relative;
+      margin-top:-70px;
+      object-fit:cover;
+    }
+
+    .name{
+      margin-top:10px;
+      font-size:24px;
+      color:#111827;
+    }
+
+    .role{
+      color:#38bdf8;
+      margin-top:5px;
+      font-weight:bold;
+    }
+
+    .bio{
+      margin-top:15px;
+      color:#6b7280;
+      font-size:15px;
+      line-height:1.6;
+      max-width:600px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .stats{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      margin-top:25px;
+      flex-wrap:wrap;
+    }
+
+    .stat-box{
+      background:#f9fafb;
+      padding:15px 25px;
+      border-radius:12px;
+      min-width:120px;
+    }
+
+    .stat-box h3{
+      color:#111827;
+    }
+
+    .stat-box p{
+      color:#6b7280;
+      font-size:14px;
+    }
+
+    .buttons{
+      margin-top:25px;
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:12px 24px;
+      border-radius:8px;
+      border:none;
+      cursor:pointer;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn-primary{
+      background:#38bdf8;
+      color:white;
+    }
+
+    .btn-primary:hover{
+      background:#0ea5e9;
+      transform:translateY(-2px);
+    }
+
+    .btn-outline{
+      background:transparent;
+      border:2px solid #38bdf8;
+      color:#38bdf8;
+    }
+
+    .btn-outline:hover{
+      background:#38bdf8;
+      color:white;
+    }
+
+    @media(max-width:600px){
+      .profile-container{
+        margin:20px;
+      }
+
+      .stats{
+        gap:15px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="profile-container">
+
+    <div class="cover"></div>
+
+    <div class="profile-content">
+
+      <img class="profile-img" src="https://randomuser.me/api/portraits/men/75.jpg" alt="Profile">
+
+      <h2 class="name">john Doe</h2>
+      <div class="role">Frontend Developer</div>
+
+      <p class="bio">
+        Passionate web developer who builds modern, responsive and user-friendly websites using HTML, CSS and JavaScript.
+      </p>
+
+      <div class="stats">
+        <div class="stat-box">
+          <h3>120+</h3>
+          <p>Projects</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>5K</h3>
+          <p>Followers</p>
+        </div>
+
+        <div class="stat-box">
+          <h3>3+</h3>
+          <p>Years Exp</p>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="btn btn-primary">Follow</button>
+        <button class="btn btn-outline">Message</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
